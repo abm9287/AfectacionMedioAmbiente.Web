@@ -13,3 +13,8 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 #Add-Migration VentasOtros
 ![Screem N°2  Add-Migration VentasOtros](https://user-images.githubusercontent.com/49075053/89259088-2ef61280-d5ef-11ea-92b0-1dcfd7cb036d.PNG)
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#Update-Database
+![Screem N°3 Update-Database](https://user-images.githubusercontent.com/49075053/89259708-80eb6800-d5f0-11ea-9f9d-5186299dd8c6.PNG)
+
