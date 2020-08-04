@@ -7,7 +7,7 @@ namespace AfectacionMedioAmbiente.Web.Models
 {
     public class Top
     {
-        public string RopaFoto Foto {get;set;}
+        public RopaFoto Foto { get; set; }
         public int Id { get; set;}
         public string Marca { get; set; }
         public string Modelo { get; set; }

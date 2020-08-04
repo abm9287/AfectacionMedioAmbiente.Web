@@ -7,9 +7,9 @@ namespace AfectacionMedioAmbiente.Web.Models
 {
     public class Fabrica
     {
-        public Camiseta CrearCamiseta(string marca="cuello redondo", string modelo = "polo")
+        public Camiseta CrearCamiseta(string marca = "cuello", string modelo ="polo")
         {
-            CrearCamiseta camiseta = new Camiseta(marca, modelo);
+            Camiseta camiseta = new Camiseta(marca, modelo);
             return camiseta;
         }
     }
