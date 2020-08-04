@@ -9,6 +9,6 @@ namespace AfectacionMedioAmbiente.Web.Models
     {
         public int Id { get; set; }
         public string Nombre { get; set; }
-        public List<Camiseta> Camisetas { get; set; }
+        public List<Camiseta> Camisetas { get; set; } = new List<Camiseta>(); 
     }
 }

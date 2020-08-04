@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AfectacionMedioAmbiente.Web.Data;
 using AfectacionMedioAmbiente.Web.Models;
@@ -23,6 +20,31 @@ namespace AfectacionMedioAmbiente.Web.Controllers
         public async Task<IActionResult> Index()
         {
             return View(await _context.Camisetas.ToListAsync());
+        }
+        //crea un método  'CamisetasController.cs' método Comprar
+        public async Task<IActionResult> Comprar()
+        {
+            return View(await _context.Camisetas.ToListAsync());
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult>Comprar(int? id)
+        {
+            if(id == null)
+            {
+                return NotFound();
+            }
+            var usuarioActual = 1; //ToDo: Obtener el usuario actual logueado
+            var persona = await _context.Personas.FirstOrDefaultAsync(p => p.Id == usuarioActual);
+            var camisetaSeleccionada = await _context.Camisetas.FirstOrDefaultAsync(c => c.Id == id);
+
+            if(camisetaSeleccionada == null)
+            {
+                return NotFound();
+            }
+            persona.Camisetas.Add(camisetaSeleccionada);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Camisetas/Details/5

@@ -25,6 +25,7 @@ namespace AfectacionMedioAmbiente.Web.Controllers
             return View(await _context.Personas.ToListAsync());
         }
 
+
         // GET: Personas/Details/5
         public async Task<IActionResult> Details(int? id)
         {
