@@ -7,6 +7,7 @@ namespace AfectacionMedioAmbiente.Web.Models
 {
     public class Camiseta
     {
+        public Camiseta() { }
         public Camiseta(string marca, string modelo)
         {
             Marca = marca;
