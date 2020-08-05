@@ -1,3 +1,20 @@
+#Dejando huella: finalización del programa
+
+Debes ampliar el programa anterior y persistir la información del programa en una base de datos relacional u orientada a objetos.
+
+El programa debe respetar las consignas de la rúbrica anterior e incluir las siguientes temáticas, así:
+
+    1. DbContext.
+    2. DbSet.
+    3. Relaciones uno a muchos.
+    4. Relaciones muchos a muchos.
+    5. Personalización del modelo con el modelbuilder.
+    6. Uso de Fluent API.
+    7. Parametrización con Dataanotations.
+    8. Migraciones.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # AfectacionMedioAmbiente.Web
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
