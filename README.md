@@ -27,5 +27,9 @@
 #BDD VintageStuff.Data
 ![Screem N°4 BDD 1 2 VintageStuff Data](https://user-images.githubusercontent.com/49075053/89261022-f7896500-d5f2-11ea-8c4b-f4321f66d9f1.PNG)
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+#Registro del producto 
+![Registro de un producto](https://user-images.githubusercontent.com/49075053/89423529-39ea9900-d6fc-11ea-9e33-2284c0a85531.PNG)
+
 
 
